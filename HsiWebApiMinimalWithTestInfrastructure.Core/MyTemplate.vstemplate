@@ -1,0 +1,30 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>HsiWebApiMinimalWithTestInfrastructure.Core</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>HsiWebApiMinimalWithTestInfrastructure.Core</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="HsiWebApiMinimalWithTestInfrastructure.Core.csproj" File="HsiWebApiMinimalWithTestInfrastructure.Core.csproj" ReplaceParameters="true">
+      <Folder Name="Abstractions" TargetFolderName="Abstractions">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IReceiveAsync.cs">IReceiveAsync.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppConfig.cs">AppConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PingModel.cs">PingModel.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

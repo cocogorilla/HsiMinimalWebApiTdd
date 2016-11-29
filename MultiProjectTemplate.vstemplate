@@ -1,0 +1,24 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>HsiMinimalTDDWebApi</Name>
+        <Description>A domain driven design folder structure with example TDD into a web api with composition root</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Api" CopyParameters="true">
+                HsiWebApiMinimalWithTestInfrastructure.Api\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
+                HsiWebApiMinimalWithTestInfrastructure.Core\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Infrastructure" CopyParameters="true">
+                HsiWebApiMinimalWithTestInfrastructure.Infrastructure\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Tests" CopyParameters="true">
+                HsiWebApiMinimalWithTestInfrastructure.Tests\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
